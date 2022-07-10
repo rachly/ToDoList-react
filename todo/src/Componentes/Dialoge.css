@@ -1,0 +1,30 @@
+.container{
+position: absolute;
+
+top: 50%;
+left: 50%; 
+transform: translate(-50%,-50%);
+}
+.button{
+    margin-left:35px;
+    position: relative;
+    text-align: center;
+    width: 150px;
+    padding: 20px;
+    font-size: 20px;
+    color: black;
+    font-weight: 400;
+    letter-spacing: 3px;
+    border-radius: 20px;
+    transition: 1s;
+}
+h1{
+    
+    text-align: center;
+    text-shadow: 0 0 2px #c38e37,0 0 5px #c38e37;
+}
+.button:hover{
+    box-shadow: 0 3px 50px 0 #c38e37 inset, 0 5px 50px 0 #c38e37,
+                0 3px 50px 0 #c38e37 inset, 0 5px 50px 0 #c38e37 ;
+                text-shadow: 0 0 2px #c38e37,0 0 5px #c38e37;
+}

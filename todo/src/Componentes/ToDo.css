@@ -1,0 +1,84 @@
+.body{
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    align-items: flex-end;
+    background-image: url(/src/images/note.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:380px auto;
+}
+.countainer{
+   padding: 20px;
+    border :2px rgba(240, 128, 128, 0) solid;
+    width: 150px;
+    height: auto;
+    /* display:grid; */
+    justify-content: center;
+    justify-content: space-between;
+     grid-template-areas:  'c,c,c,d,d,d'
+                          't,t,t,t,t,t';
+    align-items: center;
+    font-size: 16px;
+    text-align: center;
+}
+.cd{
+    padding: 10px;
+}
+.titletoDo {
+    grid-area: t;
+    display: flex;
+    justify-items: right;
+    font-size: 16px;
+}
+.co{
+    grid-area: c;
+}
+.d{
+    grid-area: d;
+}
+#delete{
+   background-color: rgba(255, 127, 80, 0);
+   color:lightskyblue;
+}
+.add{
+ float: right;
+ position: fixed;
+ width: 85px;
+ height: 55px;
+ color: lightskyblue;
+ background-color: rgba(255, 0, 0, 0);
+}
+.input{
+border :2px lightcoral solid ;
+width: 65px;
+height:65px;
+}
+.inputS{
+    background-color: rgba(255, 127, 80, 0);
+    color:lightskyblue;
+}
+.inputC{
+    background-color: rgba(255, 127, 80, 0);
+    color:lightskyblue;
+}
+
+            
+.containerTo{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+/* .containerTo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+} ‏ */
+
+@media (max-width:800px){
+    .containerTo{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+  }}
